@@ -5,9 +5,11 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class UltimasNoticias extends Noticias {
 	 
 
-	public UltimasNoticias(VerticalLayout padre) {
-		super(padre);
-		 
+	 
+
+	public UltimasNoticias(Registrado _registrado) {
+		super();
+		this._registrado = _registrado;
 	}
 
 	//private event _ocultar;

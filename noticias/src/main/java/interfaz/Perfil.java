@@ -5,7 +5,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Perfil extends Logueado {
 	public VerActividad _verActividad;
 
-	public Perfil(VerticalLayout MainView) {
+	public Perfil(noticias.MainView MainView) {
 		
 		super(MainView);
 		this.getNoticiasadministrador().setVisible(false);

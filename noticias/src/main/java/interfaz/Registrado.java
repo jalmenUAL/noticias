@@ -4,7 +4,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class Registrado extends Logueado {
 	
-	public Registrado(VerticalLayout MainView) {
+	public Registrado(noticias.MainView MainView) {
 		super(MainView);
 		// TODO Auto-generated constructor stub
 		this.getNoticiasadministrador().setVisible(false);

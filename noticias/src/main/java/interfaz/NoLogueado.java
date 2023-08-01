@@ -10,11 +10,14 @@ public class NoLogueado extends VistaNologueado{
 	public VerticalLayout MainView;
 	
 	public NoLogueado(VerticalLayout MainView) {
-		
+		_login = new Login(this);
 		this.MainView = MainView;
+		Login();
+		
 	}
 
 	public void Login() {
-		throw new UnsupportedOperationException();
+		
+		this.getContenido().as(VerticalLayout.class).add(_login);
 	}
 }
