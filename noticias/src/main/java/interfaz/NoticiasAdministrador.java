@@ -8,7 +8,8 @@ public class NoticiasAdministrador extends Noticias {
 	
 
 	public NoticiasAdministrador(Administrador _administrador) {
-		super();
+		//EL SUPER SE AÑADE A MANO
+		super(_administrador);
 		this._administrador = _administrador;
 		this.getOcultar().setVisible(false);
 	}

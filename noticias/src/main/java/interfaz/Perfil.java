@@ -16,6 +16,9 @@ public class Perfil extends Logueado {
 	}
 	
 	public void VerActividad() {
-		throw new UnsupportedOperationException();
+		_verActividad = new VerActividad(this);
+		this.getContenido().as(VerticalLayout.class).add(_verActividad);
+		
+		
 	}
 }

@@ -15,10 +15,12 @@ public class Noticias_item extends VistaNoticiasitem {
 	public printer _printer;
 
 	public void VerDetalle() {
-		throw new UnsupportedOperationException();
+		_verDetalle = new VerDetalle(this);
+		this._noticias.logueado.getContenido().as(VerticalLayout.class).add(_verDetalle);
 	}
 
 	public void imprimir() {
-		throw new UnsupportedOperationException();
+		_printer = new printer();
+		_printer.imprimir();
 	}
 }

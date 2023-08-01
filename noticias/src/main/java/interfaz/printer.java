@@ -1,14 +1,13 @@
 package interfaz;
 
+import com.vaadin.flow.component.notification.Notification;
+
 public class printer {
-	public printer(Noticias_item _noticiasitem) {
-		super();
-		this._noticiasitem = _noticiasitem;
-	}
+	 
 
 	public Noticias_item _noticiasitem;
 
 	public void imprimir() {
-		throw new UnsupportedOperationException();
+		Notification.show("Estoy imprimiendo las noticias");
 	}
 }

@@ -11,4 +11,6 @@ public class VerRegistrados extends VistaVerregistrados {
 	}
 	public Administrador _administrador;
 	public Vector<VerRegistrados_item> _item = new Vector<VerRegistrados_item>();
+	
+	 
 }

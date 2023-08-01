@@ -8,7 +8,8 @@ public class UltimasNoticias extends Noticias {
 	 
 
 	public UltimasNoticias(Registrado _registrado) {
-		super();
+		//EL SUPER SE AÑADE A MANO
+		super(_registrado);
 		this._registrado = _registrado;
 	}
 
@@ -16,6 +17,9 @@ public class UltimasNoticias extends Noticias {
 	public Registrado _registrado;
 
 	public void Ocultar() {
-		throw new UnsupportedOperationException();
+		for (Noticias_item it : _item) {
+		
+			if (((UltimasNoticias_item) it).marcada) { it.setVisible(false);}
+		}
 	}
 }

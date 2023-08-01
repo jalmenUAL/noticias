@@ -8,6 +8,7 @@ public class NoticiasAdministrador_item extends Noticias_item {
 	public NoticiasAdministrador_item(Noticias padre) {
 		super(padre);
 		this.getMarcar().setVisible(false);
+		this.getEliminar().addClickListener(event->Eliminar());
 	}
 
 	public void Eliminar() {

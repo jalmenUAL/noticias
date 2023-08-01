@@ -5,6 +5,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class UltimasNoticias_item extends Noticias_item {
 	//private event _marcar;
 
+	//PUESTO A MANO
+	public Boolean marcada = false;
 	 
 	public UltimasNoticias_item(Noticias padre) {
 		super(padre);
@@ -13,6 +15,7 @@ public class UltimasNoticias_item extends Noticias_item {
 	}
 
 	public void Marcar() {
-		throw new UnsupportedOperationException();
+		this.getTexto().getStyle().set("colour", "blue");
+		marcada = true;
 	}
 }

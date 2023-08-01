@@ -16,6 +16,7 @@ public class Registrado extends Logueado {
 	public UltimasNoticias _ultimasNoticias;
 
 	public void UltimasNoticias() {
-		throw new UnsupportedOperationException();
+		_ultimasNoticias = new UltimasNoticias(this);
+		this.getContenido().as(VerticalLayout.class).add(_ultimasNoticias);
 	}
 }

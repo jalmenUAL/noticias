@@ -12,6 +12,8 @@ public class VerRegistrados_item extends VistaVerregistradositem {
 	public VerRegistrados _verRegistrados;
 
 	public void Perfil() {
-		throw new UnsupportedOperationException();
+		this._verRegistrados._administrador.MainView.remove(this);
+		this._verRegistrados._administrador.MainView.perfil = new Perfil(this._verRegistrados._administrador.MainView);
+		this._verRegistrados._administrador.MainView.add(this._verRegistrados._administrador.MainView.perfil);
 	}
 }
