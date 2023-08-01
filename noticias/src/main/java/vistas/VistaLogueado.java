@@ -27,6 +27,8 @@ public class VistaLogueado extends LitTemplate {
 	private Button logout;
 	@Id("contenido")
 	private Element contenido;
+	@Id("BuscarLayout")
+	private Element buscarLayout;
 
 	public VistaLogueado() {
         // You can initialise any data required for the connected UI components here.
@@ -86,6 +88,14 @@ public class VistaLogueado extends LitTemplate {
 
 	public void setContenido(Element contenido) {
 		this.contenido = contenido;
+	}
+
+	public Element getBuscarLayout() {
+		return buscarLayout;
+	}
+
+	public void setBuscarLayout(Element buscarLayout) {
+		this.buscarLayout = buscarLayout;
 	}
 
 }
