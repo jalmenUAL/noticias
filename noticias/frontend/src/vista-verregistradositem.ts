@@ -15,11 +15,11 @@ export class VistaVerregistradositem extends LitElement {
 
   render() {
     return html`
-<vaadin-horizontal-layout class="content" style="width: 100%; height: 100%;">
+<vaadin-horizontal-layout class="content" style="width: 100%; height: 100%;position: absolute;">
  <label id="login" style="flex-grow: 1;">Label</label>
  <label id="password" style="flex-grow: 1;">Label</label>
  <vaadin-button theme="primary" id="verperfil">
-  Ver Perfil 
+   Ver Perfil 
  </vaadin-button>
 </vaadin-horizontal-layout>
 `;

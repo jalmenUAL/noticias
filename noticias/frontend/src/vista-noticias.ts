@@ -16,18 +16,18 @@ export class VistaNoticias extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;">
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;">
  <label style="align-self: center;">Noticias </label>
  <vaadin-vertical-layout theme="spacing" id="lista" style="align-self: stretch; flex-grow: 1;"></vaadin-vertical-layout>
  <vaadin-horizontal-layout theme="spacing" style="align-self: stretch;">
   <vaadin-button theme="primary" id="imprimir">
-   Imprimir
+    Imprimir 
   </vaadin-button>
   <vaadin-button theme="primary" id="verdetalle">
-   Ver Detalle
+    Ver Detalle 
   </vaadin-button>
   <vaadin-button theme="primary" id="ocultar">
-   Ocultar
+    Ocultar 
   </vaadin-button>
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>

@@ -14,7 +14,9 @@ export class VistaVeractividad extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;" id="actividades"></vaadin-vertical-layout>
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;" id="actividades">
+ <label style="align-self: stretch;">Actividad</label>
+</vaadin-vertical-layout>
 `;
   }
 

@@ -29,13 +29,8 @@ public class Noticias extends VistaNoticias {
 
 	public void VerDetalle() {
 		_verDetalle = new VerDetalle(this);
-		
-		Dialog dialog = new Dialog();
-		dialog.setModal(false);
-		dialog.setDraggable(true);
-		dialog.add(_verDetalle);
-		
-		dialog.open();
+		logueado.getContenido().as(VerticalLayout.class).remove(this);
+		logueado.getContenido().as(VerticalLayout.class).add(_verDetalle);
 	}
 
 	public void imprimir() {

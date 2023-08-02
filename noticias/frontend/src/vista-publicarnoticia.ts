@@ -17,10 +17,10 @@ export class VistaPublicarnoticia extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;">
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;">
  <vaadin-text-field error-message="Escriba el texto de una noticia" required invalid="" label="Titulo de la Noticia" id="titulo" style="align-self: stretch;"></vaadin-text-field>
  <vaadin-button theme="primary" id="publicar">
-  Publicar
+   Publicar 
  </vaadin-button>
  <vaadin-text-area label="Texto completo" placeholder="Escriba el texto completo aquí" id="texto" style="align-self: stretch;"></vaadin-text-area>
 </vaadin-vertical-layout>

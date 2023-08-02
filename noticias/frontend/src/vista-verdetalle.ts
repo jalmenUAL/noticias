@@ -14,7 +14,9 @@ export class VistaVerdetalle extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;" id="detalles"></vaadin-vertical-layout>
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;" id="detalles">
+ <label style="align-self: stretch;">Detalle de las noticias</label>
+</vaadin-vertical-layout>
 `;
   }
 

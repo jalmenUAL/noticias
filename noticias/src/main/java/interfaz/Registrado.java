@@ -11,6 +11,7 @@ public class Registrado extends Logueado {
 		this.getVeractividad().setVisible(false);
 		this.getPublicarnoticia().setVisible(false);
 		this.getNoticiaseliminadas().setVisible(false);
+		this.getVerregistrados().setVisible(false);
 		
 		this.getUltimasnoticias().addClickListener(event->UltimasNoticias());
 	}

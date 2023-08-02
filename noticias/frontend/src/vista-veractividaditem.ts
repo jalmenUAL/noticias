@@ -14,7 +14,7 @@ export class VistaVeractividaditem extends LitElement {
 
   render() {
     return html`
-<vaadin-horizontal-layout class="content" style="width: 100%; height: 100%;">
+<vaadin-horizontal-layout class="content" style="width: 100%; height: 100%;position: absolute;">
  <label id="fecha" style="flex-grow: 1;">Label</label>
  <label id="actividad" style="flex-grow: 1;">Label</label>
 </vaadin-horizontal-layout>

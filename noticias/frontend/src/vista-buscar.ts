@@ -15,11 +15,11 @@ export class VistaBuscar extends LitElement {
 
   render() {
     return html`
-<vaadin-horizontal-layout class="content" style="width: 100%; height: 100%;">
- <vaadin-button theme="primary" id="botonBuscar" style="flex-grow: 0;">
-  Buscar
+<vaadin-horizontal-layout class="content" style="width: 100%;">
+ <vaadin-button theme="primary" id="botonBuscar" style="flex-grow: 1; flex-shrink: 1;">
+   Buscar 
  </vaadin-button>
- <input type="text" id="textoBuscado" style="flex-grow: 1;">
+ <input type="text" id="textoBuscado" style="flex-shrink: 1; flex-grow: 1; width: 100%;">
 </vaadin-horizontal-layout>
 `;
   }

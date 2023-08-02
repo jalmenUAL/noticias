@@ -17,12 +17,12 @@ export class VistaLogin extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;" id="vaadinVerticalLayout">
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;" id="vaadinVerticalLayout">
  <vaadin-form-layout id="vaadinFormLayout">
   <vaadin-text-field error-message="Please enter a value" required invalid="" label="Login" id="login"></vaadin-text-field>
   <vaadin-text-field error-message="Please enter a value" required invalid="" label="Password" id="password"></vaadin-text-field>
   <vaadin-button theme="primary" id="botonlogin">
-   Login
+    Login 
   </vaadin-button>
  </vaadin-form-layout>
 </vaadin-vertical-layout>

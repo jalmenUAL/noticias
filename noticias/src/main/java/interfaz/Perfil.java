@@ -12,6 +12,7 @@ public class Perfil extends Logueado {
 		this.getUltimasnoticias().setVisible(false);
 		this.getPublicarnoticia().setVisible(false);
 		this.getNoticiaseliminadas().setVisible(false);
+		this.getVerregistrados().setVisible(false);
 		
 	}
 	

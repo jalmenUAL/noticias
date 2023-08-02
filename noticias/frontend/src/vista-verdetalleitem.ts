@@ -15,7 +15,7 @@ export class VistaVerdetalleitem extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;">
+<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;">
  <label id="titulo" style="align-self: stretch;">Label</label>
  <label id="texto" style="align-self: stretch; flex-grow: 0;">Label</label>
  <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 100%; flex-shrink: 1;">
