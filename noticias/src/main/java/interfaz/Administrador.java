@@ -12,22 +12,31 @@ public class Administrador extends Logueado {
 		super(MainView);
 		this.getUltimasnoticias().setVisible(false);
 	    this.getVeractividad().setVisible(false);
+	    
+	    this.getNoticiaseliminadas().addClickListener(event->NoticiasEliminadas());
+	    this.getNoticiasadministrador().addClickListener(event->NoticiasAdministrador());
+	    this.getPublicarnoticia().addClickListener(event->PublicarNoticia());
+	    
 	}
 
 	
 
 	public void NoticiasEliminadas() {
+		
+		this.getContenido().as(VerticalLayout.class).removeAll();
 		_noticiasEliminadas = new NoticiasEliminadas(this);
 		this.getContenido().as(VerticalLayout.class).add(_noticiasEliminadas);
 		
 	}
 
 	public void NoticiasAdministrador() {
+		this.getContenido().as(VerticalLayout.class).removeAll();
 		_noticiasAdministrador = new NoticiasAdministrador(this);
 		this.getContenido().as(VerticalLayout.class).add(_noticiasAdministrador);
 	}
 
 	public void PublicarNoticia() {
+		this.getContenido().as(VerticalLayout.class).removeAll();
 		_publicarNoticia = new PublicarNoticia(this);
 		this.getContenido().as(VerticalLayout.class).add(_publicarNoticia);
 	}

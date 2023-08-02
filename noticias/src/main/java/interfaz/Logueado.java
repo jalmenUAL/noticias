@@ -19,6 +19,8 @@ public class Logueado extends VistaLogueado {
 		
 		Buscar();
 		
+		this.getLogout().addClickListener(event->Logout());
+		
 		
 		
 	}

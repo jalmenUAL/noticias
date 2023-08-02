@@ -7,9 +7,9 @@ import vistas.VistaNologueado;
 public class NoLogueado extends VistaNologueado{
 	public Login _login;
 	
-	public VerticalLayout MainView;
+	public noticias.MainView MainView;
 	
-	public NoLogueado(VerticalLayout MainView) {
+	public NoLogueado(noticias.MainView MainView) {
 		_login = new Login(this);
 		this.MainView = MainView;
 		Login();

@@ -14,6 +14,7 @@ import interfaz.Administrador;
 import interfaz.Logueado;
 import interfaz.NoLogueado;
 import interfaz.Perfil;
+import interfaz.Registrado;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -40,7 +41,7 @@ public class MainView extends VerticalLayout {
 
 	
 	 public Administrador admin;
-     public Logueado logueado;
+     public Registrado registrado;
      public Perfil perfil;
      public NoLogueado nologueado;
     /**
