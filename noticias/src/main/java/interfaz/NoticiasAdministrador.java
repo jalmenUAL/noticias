@@ -12,6 +12,11 @@ public class NoticiasAdministrador extends Noticias {
 		super(_administrador);
 		this._administrador = _administrador;
 		this.getOcultar().setVisible(false);
+		
+		//Una noticia añadida a mano de prueba
+		
+		NoticiasAdministrador_item n = new NoticiasAdministrador_item(this);
+		this.getLista().as(VerticalLayout.class).add(n);
 	}
 
 

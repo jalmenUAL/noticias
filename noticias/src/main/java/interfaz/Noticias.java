@@ -12,7 +12,7 @@ public class Noticias extends VistaNoticias {
 	public Vector<Noticias_item> _item = new Vector<Noticias_item>();
 	
 	//AQUÍ HAY QUE AÑADIR EL LOGUEADO A MANO 
-	Logueado logueado;
+	public Logueado logueado;
 	 
 
 	public Noticias(Logueado logueado) {
@@ -21,6 +21,8 @@ public class Noticias extends VistaNoticias {
 		
 		this.getVerdetalle().addClickListener(event->VerDetalle());
 		this.getImprimir().addClickListener(event->imprimir());
+		
+		
 	}
 
 	

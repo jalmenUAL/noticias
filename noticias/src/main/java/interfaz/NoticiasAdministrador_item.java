@@ -12,6 +12,7 @@ public class NoticiasAdministrador_item extends Noticias_item {
 	}
 
 	public void Eliminar() {
-		throw new UnsupportedOperationException();
+		this._noticias.getLista().as(VerticalLayout.class).remove(this);
+		 this._noticias._item.remove(this);
 	}
 }

@@ -8,6 +8,8 @@ public class NoticiasEliminadas_item extends Noticias_item {
 		super(padre);
 		this.getMarcar().setVisible(false);
 		this.getEliminar().setVisible(false);
+		
+		
 		 
 	}
 }

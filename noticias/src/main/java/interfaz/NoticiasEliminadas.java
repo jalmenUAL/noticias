@@ -8,6 +8,12 @@ public class NoticiasEliminadas extends Noticias {
 		super(_administrador);
 		this._administrador = _administrador;
 		this.getOcultar().setVisible(false);
+		
+		
+		//Una noticia añadida a mano de prueba
+		
+		NoticiasEliminadas_item n = new NoticiasEliminadas_item(this);
+		this.getLista().as(VerticalLayout.class).add(n);
 	}
 
 
