@@ -40,9 +40,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class MainView extends VerticalLayout {
 
 	
-	 public Administrador admin;
-     public Registrado registrado;
-     public Perfil perfil;
+	 
      public NoLogueado nologueado;
     /**
      * Construct a new Vaadin view.
@@ -54,8 +52,8 @@ public class MainView extends VerticalLayout {
     public MainView(@Autowired GreetService service) {
 
       
-       nologueado = new NoLogueado(this);
-       add(nologueado);
+    	nologueado = new NoLogueado(this);
+        add(nologueado);
        
     }
 

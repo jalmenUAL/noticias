@@ -20,9 +20,7 @@ public class Logueado extends VistaLogueado {
 		Buscar();
 		
 		this.getLogout().addClickListener(event->Logout());
-		
-		
-		
+
 	}
 
 	public void Buscar() {
@@ -30,7 +28,6 @@ public class Logueado extends VistaLogueado {
 	}
 
 	public void Logout() {
-	
 		MainView.remove(this);
 		MainView.add(MainView.nologueado);
 	}

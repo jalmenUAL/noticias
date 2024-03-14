@@ -10,34 +10,17 @@ import vistas.VistaNoticias;
 
 public class Noticias extends VistaNoticias {
 	public Vector<Noticias_item> _item = new Vector<Noticias_item>();
-	
-	//AQUÍ HAY QUE AÑADIR EL LOGUEADO A MANO 
-	public Logueado logueado;
-	 
-
-	public Noticias(Logueado logueado) {
-		super();
-		this.logueado = logueado;
-		
-		this.getVerdetalle().addClickListener(event->VerDetalle());
-		this.getImprimir().addClickListener(event->imprimir());
-		
-		
-	}
-
-	
 	public VerDetalle _verDetalle;
 	public printer _printer;
-
-	public void VerDetalle() {
-		_verDetalle = new VerDetalle(this);
-		logueado.getContenido().as(VerticalLayout.class).remove(this);
-		logueado.getContenido().as(VerticalLayout.class).add(_verDetalle);
+	 
+	public Noticias() {
+		super();
+		this.getImprimir().addClickListener(event->imprimir(null));
 	}
 
-	public void imprimir() {
+	public void imprimir(Noticias_item noticia_item) {
 		_printer = new printer();
-		_printer.imprimir();
+		_printer.imprimir(noticia_item);
 	}
 	 
 }

@@ -4,12 +4,9 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class NoticiasEliminadas_item extends Noticias_item {
 
-	public NoticiasEliminadas_item(Noticias padre) {
+	public NoticiasEliminadas_item(NoticiasEliminadas padre) {
 		super(padre);
 		this.getMarcar().setVisible(false);
-		this.getEliminar().setVisible(false);
-		
-		
-		 
+		this.getEliminar().setVisible(false); 
 	}
 }

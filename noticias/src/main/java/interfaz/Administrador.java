@@ -21,6 +21,7 @@ public class Administrador extends Logueado {
 	    this.getPublicarnoticia().addClickListener(event->PublicarNoticia());
 	    this.getVerregistrados().addClickListener(event->VerRegistrados());
 	    
+	    
 	}
 
 	

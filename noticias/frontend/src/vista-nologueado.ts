@@ -1,5 +1,6 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-nologueado')
 export class VistaNologueado extends LitElement {
@@ -15,8 +16,10 @@ export class VistaNologueado extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%; position: absolute;" id="vaadinVerticalLayout">
- <label id="label" style="align-self: stretch;">Bienvenido al sistema de noticias</label>
- <vaadin-vertical-layout theme="spacing" id="contenido" style="align-self: stretch;"></vaadin-vertical-layout>
+ <label id="label" style="align-self: stretch;font-size:40pt;">Bienvenido al sistema de noticias</label>
+ <vaadin-button theme="primary" id="login" style="align-self: flex-end;">
+  Login
+ </vaadin-button>
 </vaadin-vertical-layout>
 `;
   }

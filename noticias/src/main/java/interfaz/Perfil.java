@@ -3,6 +3,7 @@ package interfaz;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class Perfil extends Logueado {
+	
 	public VerActividad _verActividad;
 
 	public Perfil(noticias.MainView MainView) {

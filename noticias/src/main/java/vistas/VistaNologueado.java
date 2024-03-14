@@ -6,13 +6,15 @@ import com.vaadin.flow.component.littemplate.LitTemplate;
 import com.vaadin.flow.dom.Element;
 import com.vaadin.flow.component.template.Id;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.button.Button;
 
 @Tag("vista-nologueado")
 @JsModule("./src/vista-nologueado.ts")
 public class VistaNologueado extends LitTemplate {
 
-    @Id("contenido")
-	private Element contenido;
+     
+	@Id("login")
+	private Button login;
 	 
 	 
 
@@ -22,14 +24,22 @@ public class VistaNologueado extends LitTemplate {
 
 
 
-	public Element getContenido() {
-		return contenido;
+	 
+
+
+
+	 
+
+
+
+	public Button getLogin() {
+		return login;
 	}
 
 
 
-	public void setContenido(Element contenido) {
-		this.contenido = contenido;
+	public void setLogin(Button login) {
+		this.login = login;
 	}
 
 }

@@ -5,7 +5,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class NoticiasAdministrador_item extends Noticias_item {
 	//private event _eliminar;
 
-	public NoticiasAdministrador_item(Noticias padre) {
+	public NoticiasAdministrador_item(NoticiasAdministrador padre) {
 		super(padre);
 		this.getMarcar().setVisible(false);
 		this.getEliminar().addClickListener(event->Eliminar());

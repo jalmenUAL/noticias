@@ -8,7 +8,7 @@ public class UltimasNoticias_item extends Noticias_item {
 	//PUESTO A MANO PARA SABER SI ESTÁ MARCADA O NO
 	Boolean marcada = false;
 	 
-	public UltimasNoticias_item(Noticias padre) {
+	public UltimasNoticias_item(UltimasNoticias padre) {
 		super(padre);
 		this.getEliminar().setVisible(false);
 		this.getMarcar().addClickListener(event->Marcar());
