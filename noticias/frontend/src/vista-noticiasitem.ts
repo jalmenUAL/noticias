@@ -16,14 +16,20 @@ export class VistaNoticiasitem extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;position: absolute;">
- <vaadin-horizontal-layout theme="spacing" style="align-self: stretch;">
+<vaadin-vertical-layout style="width: 100%; height: 100%; ">
+ <vaadin-horizontal-layout theme="spacing" style="align-self: stretch; flex-grow: 1;">
   <label id="texto" style="align-self: stretch; flex-grow: 1;">Label</label>
   <vaadin-button theme="primary" id="marcar" style="flex-grow: 0;">
     Marcar 
   </vaadin-button>
   <vaadin-button theme="primary" id="eliminar">
     Eliminar 
+  </vaadin-button>
+  <vaadin-button theme="primary" id="subir">
+   Subir
+  </vaadin-button>
+  <vaadin-button theme="primary" id="bajar">
+   Bajar
   </vaadin-button>
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>

@@ -23,7 +23,10 @@ public class VistaNoticiasitem extends LitTemplate {
 	private Button marcar;
 	@Id("eliminar")
 	private Button eliminar;
-
+	@Id("subir")
+	private Button subir;
+	@Id("bajar")
+	private Button bajar;
 	/**
      * Creates a new VistaNoticiasitem.
      */
@@ -53,6 +56,22 @@ public class VistaNoticiasitem extends LitTemplate {
 
 	public void setEliminar(Button eliminar) {
 		this.eliminar = eliminar;
+	}
+
+	public Button getSubir() {
+		return subir;
+	}
+
+	public void setSubir(Button subir) {
+		this.subir = subir;
+	}
+
+	public Button getBajar() {
+		return bajar;
+	}
+
+	public void setBajar(Button bajar) {
+		this.bajar = bajar;
 	}
 
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: Administrator(University of Almeria)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="base_de_datos.Logueado" table="Logueado" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="login" column="Login" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="password" column="Password" type="string" length="255" not-null="false" lazy="false"/>
+		<joined-subclass name="base_de_datos.Registrado" table="Registrado" lazy="false">
+			<key>
+				<column name="LogueadoID"/>
+			</key>
+			<set name="ORM_Ha_realizado" lazy="true" cascade="save-update,lock" inverse="true">
+				<key column="RegistradoLogueadoID" not-null="true"/>
+				<one-to-many class="base_de_datos.Actividad"/>
+			</set>
+		</joined-subclass>
+		<joined-subclass name="base_de_datos.Administrador" table="Administrador" lazy="false">
+			<key>
+				<column name="LogueadoID"/>
+			</key>
+			<set name="ORM_Ha_publicado" table="Noticia_Administrador" lazy="true" cascade="save-update,lock" inverse="true">
+				<key column="AdministradorLogueadoID" not-null="true"/>
+				<many-to-many column="NoticiaID" class="base_de_datos.Noticia">
+				</many-to-many>
+			</set>
+		</joined-subclass>
+	</class>
+</hibernate-mapping>

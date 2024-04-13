@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: Administrator(University of Almeria)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="base_de_datos.Noticia" table="Noticia" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="titulo" column="Titulo" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="texto_corto" column="Texto_corto" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="texto_largo" column="Texto_largo" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="imagen" column="Imagen" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="eliminada" column="Eliminada" type="boolean" length="1" not-null="true" lazy="false"/>
+		<set name="ORM_Ha_sido_publicada_por" table="Noticia_Administrador" lazy="true" cascade="save-update,lock">
+			<key column="NoticiaID" not-null="true"/>
+			<many-to-many column="AdministradorLogueadoID" class="base_de_datos.Administrador">
+			</many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

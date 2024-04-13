@@ -20,7 +20,6 @@ public class VistaLogin extends LitTemplate {
 	private TextField password;
 	@Id("botonlogin")
 	private Button botonlogin;
-
 	public VistaLogin() {
         // You can initialise any data required for the connected UI components here.
     }
